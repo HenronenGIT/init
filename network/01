@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ifconfig | grep ": " | grep -v  "\t" | cut -d ':' -f1
