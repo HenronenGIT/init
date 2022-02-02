@@ -1,0 +1,3 @@
+#!/bin/bash
+
+traceroute who.int | awk -F '[()]' '{print $2}'
