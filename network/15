@@ -1,0 +1,5 @@
+# Make the intra.42.fr address reroute to 46.19.122.85
+
+1. Lets find "hosts" file using path /private/etc/hosts
+2. Here we can edit that file and reroute certain website addresses
+3. Lets use syntax "46.19.122.85 intra.42.fr"
