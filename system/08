@@ -1,0 +1,5 @@
+
+# What file contains the RSA keys
+# of systems that are authorized to connect via SSH?
+
+Path to the file:	.ssh/authorized_keys
