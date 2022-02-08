@@ -1,4 +1,5 @@
 #!/bin/bash
-# Find the IP that was assigned to you by dhcp server #
+#
+# Find the IP that was assigned to you by dhcp server
 
 ipconfig getpacket en0 | grep siaddr | awk '{print $3}'

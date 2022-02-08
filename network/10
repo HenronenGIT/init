@@ -1,3 +1,5 @@
 #!/bin/bash
+#
+# Identify the network devices between your computer and the who.int domain
 
 traceroute -n who.int | awk '{print $2}'

@@ -1,6 +1,7 @@
 #!/bin/bash
+#
+# Get the list of the network interfaces of the machine without
+# displaying any detail
+# for these interfaces. Only the list of names.
 
-#Get the list of the network interfaces of the machine without
-#displaying any detail
-#for these interfaces. Only the list of names. #
-ifconfig -a | grep ": " | grep -v  "\t" | cut -d ':' -f1
+ifconfig -l
