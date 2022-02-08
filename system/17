@@ -1,0 +1,9 @@
+#!/bin.bash
+#
+# Find the command that allows you to connect
+# via ssh on the VM. (In parallel with
+# the graphic session)
+
+ssh 'name_of_vm@ip_of_vm'
+
+#in my case ssh hmaronen@10.11.199.70
