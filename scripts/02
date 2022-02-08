@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Write a script which delete an ACTIVE user on the VM.
+
+sudo userdel -rf 'username'
+
+# -f for forcing even if there is active processes
+# -r for removing home folder also
