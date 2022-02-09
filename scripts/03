@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Create new .c file
+# Create new .c file with school header and library of your choice
 
 echo ":Stdheader" > temp_header
 echo "ZZ" >> temp_header
@@ -8,10 +8,15 @@ echo "Filename?"
 read file
 echo "Library for #include?"
 read lib
-echo $file > $file
-echo "#include \"$lib\"" > $file
-echo "" >> $file
-vim -s temp_header $file
-rm temp_header
-vim $file
+if [ ! $file ];
+then
+	rm temp_header
+	echo "No filename or Library added!"
+	exit
+else
+	echo $file > $file
+	echo "#include \"$lib\"" > $file
+	vim -s temp_header $file
+	rm temp_header
 fi
+vim $file
