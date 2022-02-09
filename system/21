@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# List all real users on the VM
+
+getent passwd {1000..60000} | awk -F: '{print $1}'
+
+# Values between brackets depends what command:
+# grep -E '^UID_MIN|^UID_MAX' /etc/login.defs gives

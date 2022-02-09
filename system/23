@@ -1,0 +1,13 @@
+# Explain how connect yourself as new user.
+# (With graphic session and ssh session)
+
+Graphic session:
+
+command:	su 'username'
+
+SSH session:
+
+1.	Connect to VM via ssh
+2.	Now we can switch users with same command as in graphic session
+
+Note: We always need user password.
