@@ -1,3 +1,5 @@
 # Thanks to the previous question and the reverse DNS find the name of your host
 
-ipconfig getpacket en0 | grep "server_identifier"
+c1r5p11.hive.fi
+
+# hostname

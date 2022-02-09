@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Create new .c file
+
+echo ":Stdheader" > temp_header
+echo "ZZ" >> temp_header
+echo "Filename?"
+read file
+echo "Library for #include?"
+read lib
+echo $file > $file
+echo "#include \"$lib\"" > $file
+echo "" >> $file
+vim -s temp_header $file
+rm temp_header
+vim $file
+fi

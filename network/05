@@ -3,4 +3,4 @@
 # Identify the IP address of the DNS
 # that responds to the following url: who.int
 
-nslookup who.int
+nslookup who.int | sed '6!d' | awk '{print $2}'

@@ -1,4 +1,4 @@
 # What file contains the local DNS entries?
 
 Path to file:		/private/etc/hosts
-We can use command:	cat /private/etc/hosts
+# We can use command:	cat /private/etc/hosts

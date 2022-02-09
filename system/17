@@ -6,4 +6,4 @@
 
 ssh 'name_of_vm@ip_of_vm'
 
-#in my case ssh hmaronen@10.11.199.70
+# in my case ssh hmaronen@10.11.199.70

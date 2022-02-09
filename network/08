@@ -1,0 +1,6 @@
+# Find the provider of who.int
+
+Provider: Cloudflare, Inc.
+
+1.	traceroute who.int
+2.	whois 104.17.113.188 | grep "Organization"

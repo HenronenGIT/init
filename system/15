@@ -2,4 +2,4 @@
 #
 # Find the command that kills the background command’s process
 
-sudo kill
+sudo kill 'process_ID'
