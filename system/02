@@ -2,4 +2,4 @@
 #
 # What command can you use to rename your system?
 
-hostnamectl set-hostname
+hostnamectl set-hostname 'hostname'

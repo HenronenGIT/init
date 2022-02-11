@@ -2,4 +2,4 @@
 #
 # Name the command that determines the state of the SSH service.
 
-sudo /etc/init.d/ssh status
+sudo systemctl status ssh

@@ -2,4 +2,4 @@
 #
 # Find the command that add a new local user
 
-sudo adduser test
+sudo adduser 'username'

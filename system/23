@@ -7,7 +7,6 @@ command:	su 'username'
 
 SSH session:
 
-1.	Connect to VM via ssh
-2.	Now we can switch users with same command as in graphic session
+1.	Connect to VM with ssh 'name'@'ip_of_VM'
 
-Note: We always need user password.
+Note: We always need user password or we can connect to root with root password
