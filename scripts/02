@@ -2,7 +2,12 @@
 #
 # Write a script which delete an ACTIVE user on the VM.
 
-sudo userdel -rf 'username'
-
-# -f for forcing even if there is active processes
-# -r for removing home folder also
+ACTIVE=$(who | awk '{print $1}')
+echo "Account you want to delete?"; read ACC
+if  grep -q "$ACTIVE" <<< $ACC; then
+	sudo pkill -9 -u $ACC
+	sudo userdel -rf $ACC
+	echo "User $ACC has been deleted!"
+else
+	printf "Account is not logged in or it does not exists!\n"
+fi
