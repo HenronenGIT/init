@@ -4,6 +4,5 @@
 name:	nat
 ip:		10.60.1.1 
 
-command used
-
-traceroute who.int | grep "nat" | awk -F "[()]" '{print $2}'
+# command used:
+# traceroute who.int | grep "nat" | awk -F "[()]" '{print $2}'

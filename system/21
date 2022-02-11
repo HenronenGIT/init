@@ -2,7 +2,4 @@
 #
 # List all real users on the VM
 
-getent passwd {1000..60000} | awk -F: '{print $1}'
-
-# Values between brackets depends what command:
-# grep -E '^UID_MIN|^UID_MAX' /etc/login.defs gives
+eval getent passwd {$(awk '/^UID_MIN/ {print $2}' /etc/login.defs)..$(awk '/^UID_MAX/ {print $2}' /etc/login.defs)} | awk -F: '{print $1}'
