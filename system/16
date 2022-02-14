@@ -2,4 +2,4 @@
 # to run specific tasks following a regular
 # schedule
 
-Service:	crontab
+Service:	cron
